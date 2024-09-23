@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid blue;
+      }
+
+      /* Centrar todo el contenido en la celda usando flexbox */
+      td {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Mejor estilo para la imagen */
+      img {
+        width: 200px;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+        transition: transform 0.3s, box-shadow 0.3s; /* Animación suave */
+      }
+
+      /* Efecto al pasar el ratón sobre la imagen */
+      img:hover {
+        transform: scale(1.05); /* Agranda un poco la imagen */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Mayor sombra al hacer hover */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>TABLAS</h1>
+    </header>
+    <article>
+      <h2>ejemplo de tabla</h2>
+      <table style="width: 100%">
+        <tr>
+          <th>PAIS</th>
+          <th>Capital</th>
+          <th>Imagen</th>
+        </tr>
+        <tr>
+          <td>BOLIVIA</td>
+          <td>LA PAZ</td>
+          <td><img src="lapaz.jpg" alt="Imagen de La Paz" /></td>
+        </tr>
+      </table>
+    </article>
+  </body>
+</html>
